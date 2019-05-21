@@ -1,0 +1,187 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.302742004395,
+          18.54537163267
+        ]
+      },
+      "properties": {
+        "label": "MINUJUSTH United Nations Mission for Justice Support in Haiti"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.053344726562,
+          33.916013113402
+        ]
+      },
+      "properties": {
+        "label": "UNMOGIP United Nations Military Observer Group  in India and Pakistan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.069874763489,
+          33.528230536724
+        ]
+      },
+      "properties": {
+        "label": "UNDOF United Nations Disengagement Observer Force"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.216159820557,
+          31.76670498718
+        ]
+      },
+      "properties": {
+        "label": "UNTSO United Nations Truce Supervision Organization"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.429870605469,
+          9.606166114942
+        ]
+      },
+      "properties": {
+        "label": "UNISFA United Nations Interim Security Force for Abyei"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.197513103485,
+          33.152067981775
+        ]
+      },
+      "properties": {
+        "label": "UNIFIL United Nations Interim Force in Lebanon"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          33.36067199707,
+          35.168195426768
+        ]
+      },
+      "properties": {
+        "label": "UNFICYP United Nations Peacekeeping Force in Cyprus"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.595027446747,
+          4.8689689527
+        ]
+      },
+      "properties": {
+        "label": "UNMISS United Nations Mission in the  Republic of South Sudan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.31494140625,
+          -4.30259107712
+        ]
+      },
+      "properties": {
+        "label": "MONUSCO United Nations Organization Stabilization Mission in the Democratic Republic of the Congo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -13.18359375,
+          27.059125784374
+        ]
+      },
+      "properties": {
+        "label": "MINURSO United Nations Mission for  the Referendum in Western Sahara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.114928722382,
+          42.641882950158
+        ]
+      },
+      "properties": {
+        "label": "UNMIK United Nations Interim Administration  Mission in Kosovo"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.361938476562,
+          13.645986814875
+        ]
+      },
+      "properties": {
+        "label": "UNAMID African Union - United Nations Hybrid Operation in Darfur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.570671081543,
+          4.363891572842
+        ]
+      },
+      "properties": {
+        "label": "MINUSCA United Nations Multidimensional Integrated Stabilization Mission in the Central African Republic"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.990493774414,
+          12.624969645499
+        ]
+      },
+      "properties": {
+        "label": "MINUSMA United Nations Multidimensional Integrated Stabilization Mission in Mali"
+      }
+    }
+  ]
+}
