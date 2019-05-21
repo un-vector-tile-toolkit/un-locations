@@ -6,6 +6,32 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          17.94175346,
+          40.6518003
+        ]
+      },
+      "properties": {
+        "label": "UNGSC"
+      }      
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.96901062,
+          40.75017303
+        ]
+      },
+      "properties": {
+        "label": "UNGIS"
+      }      
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -72.302742004395,
           18.54537163267
         ]
