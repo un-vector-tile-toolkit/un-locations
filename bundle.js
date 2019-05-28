@@ -4,14 +4,15 @@
 var _goto = function _goto(map, feature) {
   map.flyTo({
     center: feature.geometry.coordinates,
-    zoom: 18,
-    speed: 0.2,
+    zoom: 17,
+    speed: 0.6,
     curve: 1
   });
 };
 
 var main = function main(geojson) {
   var i = 0;
+  var N = geojson.features.length;
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'https://hfu.github.io/macrostyle/style.json',
@@ -20,8 +21,13 @@ var main = function main(geojson) {
   });
   map.on('moveend', function (e) {
     console.log(e);
+    i++;
 
-    _goto(map, geojson.features[i++ % geojson.features.length]);
+    while (i % N === 2 || i % N === 3) {
+      i++;
+    }
+
+    _goto(map, geojson.features[i % N]);
   });
 
   _goto(map, geojson.features[i]);
