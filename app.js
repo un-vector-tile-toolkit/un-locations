@@ -12,7 +12,7 @@ const main = (geojson) => {
   const N = geojson.features.length
   const map = new mapboxgl.Map({
     container: 'map',
-    style: 'https://hfu.github.io/macrostyle/style.json',
+    style: 'https://casale.vectortiles.xyz:8888/style.json',
     attributionControl: true,
     hash: true
   })

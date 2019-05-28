@@ -15,7 +15,7 @@ var main = function main(geojson) {
   var N = geojson.features.length;
   var map = new mapboxgl.Map({
     container: 'map',
-    style: 'https://hfu.github.io/macrostyle/style.json',
+    style: 'https://casale.vectortiles.xyz:8888/style.json',
     attributionControl: true,
     hash: true
   });
