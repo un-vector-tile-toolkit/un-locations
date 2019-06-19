@@ -3,8 +3,8 @@ const goto = (map, feature) => {
   map.flyTo({
     center: feature.geometry.coordinates,
     zoom: 18,
-    speed: 0.6,
-    curve: 1
+    // speed: 0.6,
+    // curve: 1
   })
 }
 
