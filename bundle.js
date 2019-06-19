@@ -2,6 +2,7 @@
 "use strict";
 
 var _goto = function _goto(map, feature) {
+  console.log(feature.properties.label);
   map.flyTo({
     center: feature.geometry.coordinates,
     zoom: 17,
@@ -12,7 +13,8 @@ var _goto = function _goto(map, feature) {
 
 var main = function main(geojson) {
   var i = 0;
-  var N = geojson.features.length;
+  var list = [0, 1, 9, 10, 12, 14, 15];
+  var N = list.length;
   var map = new mapboxgl.Map({
     container: 'map',
     style: 'https://casale.vectortiles.xyz:8888/style.json',
@@ -20,20 +22,13 @@ var main = function main(geojson) {
     hash: true
   });
   map.on('moveend', function (e) {
-    console.log(e);
-    i++;
-
-    while (i % N === 2 || i % N === 3) {
-      i++;
-    }
-
-    _goto(map, geojson.features[i % N]);
+    _goto(map, geojson.features[list[++i % N]]);
   });
 
-  _goto(map, geojson.features[i]);
+  _goto(map, geojson.features[list[++i % N]]);
 };
 
-fetch('https://hfu.github.io/un-locations/un-locations.geojson').then(function (response) {
+fetch('https://un-vector-tile-toolkit.github.io/un-locations/un-locations.geojson').then(function (response) {
   return response.json();
 }).then(function (geojson) {
   return main(geojson);

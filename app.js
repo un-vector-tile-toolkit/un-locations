@@ -1,4 +1,5 @@
 const goto = (map, feature) => {
+  console.log(feature.properties.label)
   map.flyTo({
     center: feature.geometry.coordinates,
     zoom: 17,
@@ -9,7 +10,8 @@ const goto = (map, feature) => {
 
 const main = (geojson) => {
   let i = 0
-  const N = geojson.features.length
+  const list = [0, 1, 9, 10, 12, 14, 15]
+  const N = list.length
   const map = new mapboxgl.Map({
     container: 'map',
     style: 'https://casale.vectortiles.xyz:8888/style.json',
@@ -17,15 +19,12 @@ const main = (geojson) => {
     hash: true
   })
   map.on('moveend', e => {
-    console.log(e)
-    i++
-    while (i % N === 2 || i % N === 3) i++
-    goto(map, geojson.features[i % N])
+    goto(map, geojson.features[list[++i % N]])
   })
-  goto(map, geojson.features[i])
+  goto(map, geojson.features[list[++i % N]])
 }
 
-fetch('https://hfu.github.io/un-locations/un-locations.geojson')
+fetch('https://un-vector-tile-toolkit.github.io/un-locations/un-locations.geojson')
   .then(response => response.json())
   .then(geojson => main(geojson))
 
